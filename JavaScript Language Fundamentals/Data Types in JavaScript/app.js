@@ -31,3 +31,18 @@ const sym = Symbol()
 console.log(typeof sym)
 
 // REFERENCE DATA TYPES
+
+// ARRAY
+const hobbies = ['movies', 'music']
+console.log(typeof hobbies)
+
+// OBJECT LITERAL
+const address = {
+  city: 'Lehi',
+  state: 'Utah'
+}
+console.log(typeof address)
+
+const today = new Date()
+console.log(today)
+console.log(typeof today)
