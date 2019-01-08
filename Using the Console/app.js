@@ -1,4 +1,8 @@
-// LOG TO CONSOLE
+/*
+========================================
+LOG TO THE CONSOLE
+========================================
+*/
 
 console.log('Hello World') // LOG A STRING
 console.log(123) // LOG A NUMBER
