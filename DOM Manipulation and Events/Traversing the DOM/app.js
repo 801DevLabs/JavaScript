@@ -55,7 +55,7 @@ val = listItem.nextSibling
 val = listItem.nextElementSibling
 val = listItem.nextElementSibling.nextElementSibling
 
-// PRE SIBLINGS
+// PREVIOUS SIBLINGS
 val = listItem.previousSibling
 val = listItem.previousElementSibling
 
