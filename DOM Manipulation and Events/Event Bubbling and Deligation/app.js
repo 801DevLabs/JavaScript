@@ -4,26 +4,26 @@ EVENT BUBBLING AND DELEGATION
 ====================================
 */
 
-// document.querySelector('.card-title').addEventListener('click', function(){
-//   console.log('card-title')
-// })
+document.querySelector('.card-title').addEventListener('click', function(){
+  console.log('card-title')
+})
 
-// document.querySelector('.card-content').addEventListener('click', function(){
-//   console.log('card content')
-// })
+document.querySelector('.card-content').addEventListener('click', function(){
+  console.log('card content')
+})
 
-// document.querySelector('.card').addEventListener('click', function(){
-//   console.log('card')
-// })
+document.querySelector('.card').addEventListener('click', function(){
+  console.log('card')
+})
 
-// document.querySelector('.col').addEventListener('click', function(){
-//   console.log('col')
-// })
+document.querySelector('.col').addEventListener('click', function(){
+  console.log('col')
+})
 
 // EVENT DELEGATION
-// const delItem = document.querySelector('.delete-item')
+const delItem = document.querySelector('.delete-item')
 
-// delItem.addEventListener('click', deleteItem)
+delItem.addEventListener('click', deleteItem)
 
 document.body.addEventListener('click', deleteItem)
 
