@@ -1,14 +1,14 @@
 /*
 ====================================
-EVEN LISTENERS AND THE EVENT LOOP
+EVENT LISTENERS AND THE EVENT LOOP
 ====================================
 */
 
-// document.querySelector('.clear-tasks').addEventListener('click', function(e) {
-//   console.log('Hello World')
+document.querySelector('.clear-tasks').addEventListener('click', function(e) {
+  console.log('Hello World')
 
-//   e.preventDefault()
-// })
+  e.preventDefault()
+})
 
 document.querySelector('.clear-tasks').addEventListener('click', onClick)
 
