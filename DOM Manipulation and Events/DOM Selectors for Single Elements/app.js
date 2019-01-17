@@ -4,23 +4,23 @@ DOM SELECTORS FOR SINGLE ELEMENTS
 ====================================
 */
 
-// // GET ELEMENT BY ID
-// console.log(document.getElementById('task-title'))
+// GET ELEMENT BY ID
+console.log(document.getElementById('task-title'))
 
-// // GET THINGS FROM THE ELEMENT
-// console.log(document.getElementById('task-title').id)
+// GET THINGS FROM THE ELEMENT
+console.log(document.getElementById('task-title').id)
 
-// const taskTitle = document.getElementById('task-title')
+const taskTitle = document.getElementById('task-title')
 
-// // CHANGE STYLING
-// taskTitle.style.background = '#333'
-// taskTitle.style.color = '#fff'
-// taskTitle.style.padding = '5px'
+// CHANGE STYLING
+taskTitle.style.background = '#333'
+taskTitle.style.color = '#fff'
+taskTitle.style.padding = '5px'
 
-// // CHANGE CONTENT
-// taskTitle.textContent = 'Task List'
-// taskTitle.innerText = 'My Tasks'
-// taskTitle.innerHTML = '<span style="color:red">Task List</span>'
+// CHANGE CONTENT
+taskTitle.textContent = 'Task List'
+taskTitle.innerText = 'My Tasks'
+taskTitle.innerHTML = '<span style="color:red">Task List</span>'
 
 // QUERY SELECTOR
 console.log(document.querySelector('#task-title'))
