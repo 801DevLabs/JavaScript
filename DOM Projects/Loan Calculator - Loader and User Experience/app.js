@@ -1,14 +1,24 @@
 /*
 ====================================
-LOAN CALCULATOR - CALCULATE AND ERROR
+LOAN CALCULATOR - LOADER AND USER EXPERIENCE
 ====================================
 */
 
 // LISTEN FOR SUBMIT
-document.querySelector('#loan-form').addEventListener('submit', calculateResults)
+document.querySelector('#loan-form').addEventListener('submit', function(e){
+  // HIDE RESULTS
+  document.getElementById('results').style.display = 'none'
+
+  // SHOW LOADER
+  document.getElementById('loading').style.display = 'block'
+
+  setTimeout(calculateResults, 2000)
+
+  e.preventDefault()
+})
 
 // CALCULATE RESULTS
-function calculateResults(e){
+function calculateResults(){
   console.log('Calculating...')
   // UI VARS
   const amount = document.getElementById('amount')
@@ -18,7 +28,7 @@ function calculateResults(e){
   const totalPayment = document.getElementById('total-payment')
   const totalInterest = document.getElementById('total-interest')
 
-  const principal = parseFloat(amount.value)
+  const principal = parseFloat(amount.value);
   const calculatedInterest = parseFloat(interest.value) / 100 / 12
   const calculatedPayments = parseFloat(years.value) * 12
 
@@ -28,17 +38,27 @@ function calculateResults(e){
 
   if(isFinite(monthly)) {
     monthlyPayment.value = monthly.toFixed(2)
-    totalPayment.value = (monthly * calculatedPayments).toFixed(2)
+    totalPayment.value = (monthly * calculatedPayments).toFixed(2);
     totalInterest.value = ((monthly * calculatedPayments) - principal).toFixed(2)
+
+    // SHOW RESULTS
+    document.getElementById('results').style.display = 'block'
+
+    // HIDE LOADING
+    document.getElementById('loading').style.display = 'none'
   } else {
     showError('Please check your numbers')
   }
-
-  e.preventDefault()
 }
 
 // SHOW ERROR
 function showError(error) {
+  // HIDE RESULTS
+  document.getElementById('results').style.display = 'none'
+
+  // HIDE LOADING
+  document.getElementById('loading').style.display = 'none'
+
   // CREATE A DIV
   const errorDiv = document.createElement('div')
 
