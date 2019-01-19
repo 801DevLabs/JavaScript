@@ -1,6 +1,6 @@
 /*
 ====================================
-NUMBER GUESSER - WALIDATION AND WINNING CASE
+NUMBER GUESSER - VALIDATION AND WINNING CASE
 ====================================
 
 GAME FUNCTIONS
