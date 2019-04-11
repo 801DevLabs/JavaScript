@@ -4,6 +4,7 @@ ES6 CLASSES
 ========================================
 */
 
+// CREATE A PERSON CLASS
 class Person {
   constructor(firstName, lastName, dob) {
     this.firstName = firstName
