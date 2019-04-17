@@ -27,6 +27,7 @@ class Person {
   }
 }
 
+// SHOW CLASS DATA IN THE CONSOLE
 const Tom = new Person('Tom', 'Haverford')
 const April = new Person('April', 'Ludgate', '4/7/1990')
 
